@@ -15,8 +15,6 @@ services:
     resource: '../src/'
     exclude:
       - '../src/DependencyInjection/'
-      - '../src/EventSubscriber/'
-      - '../src/Service/MJMLService.php'
 
   Apb\MailerBundle\Service\MJMLService:
     arguments:
