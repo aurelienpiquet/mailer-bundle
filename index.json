@@ -1,0 +1,14 @@
+{
+  "recipes": {
+    "apb/user-bundle": [
+      "1.2"
+    ]
+  },
+  "branch": "main",
+  "is_contrib": true,
+  "_links": {
+    "repository": "github.com/aurelienpiquet/mailer-bundle",
+    "origin_template": "{package}:{version}@github.com/aurelienpiquet/mailer-bundle:main",
+    "recipe_template": "https://api.github.com/repos/aurelienpiquet/mailer-bundle/contents/apb-mailer-bundle.{version}.json"
+  }
+}

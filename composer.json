@@ -1,0 +1,29 @@
+{
+    "name": "apb/mailer-bundle",
+    "version": "0.1",
+    "description": "A bundle to send email and configure templates",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Apb\\MailerBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aurelien Piquet"
+        }
+    ],
+    "extra": {
+        "symfony": {
+            "endpoint": [
+                "https://api.github.com/repos/aurelienpiquet/mailer-bundle/contents/index.json",
+                "flex://defaults"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/mailer": "6.4.*"
+    }
+}

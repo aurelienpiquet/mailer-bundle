@@ -1,0 +1,37 @@
+{
+  "manifests": {
+    "apb/mailer-bundle": {
+      "manifest": {
+        "bundles": {
+          "Apb\\MailerBundle\\ApbMailerBundle": [
+            "all"
+          ]
+        },
+        "copy-from-recipe": {
+          "config/": "%CONFIG_DIR%"
+        },
+        "gitignore": [
+          "/%CONFIG_DIR%/jwt/*.pem"
+        ],
+        "post-install-output": [
+          "  1. <bg=magenta;fg=white> Configure mailer_bundle.yaml </>",
+          "    * Create a file public/style/mailer.css if you want, otherwise a default font will be used",
+          "    * Logo of your application is to be set in /public/img/logo.png",
+          "",
+          "  2. <bg=magenta;fg=white> Install node for mjml mailer</>",
+          "    * npm install",
+          ""
+        ]
+      },
+      "files": {
+        "config/packages/mailer_bundle.yaml": {
+          "contents": [
+            "mailer_bundle:\n  configuration:\n    #    apiUrl:\n    #    projectName:\n    #    sender:\n    #    senderStr:\n    #    style: '%kernel.project_dir%/public/style/mailer.css'\n    #    logo:"
+          ],
+          "executable": false
+        }
+      },
+      "ref": "1b1c1e52a8454e2d8788f0a338ac2f5a2afa5e88"
+    }
+  }
+}
