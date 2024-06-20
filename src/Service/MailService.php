@@ -24,8 +24,12 @@ readonly class MailService
     /**
      * @param mixed[] $context
      */
-    public function send(string $mail, array $context = [], string $template = self::DEFAULT_TEMPLATE, ?bool $showError = false): bool|string
+    public function send(string $mail, array $context = [], ?string $template = null, ?bool $showError = false): bool|string
     {
+        if (!$template) {
+            $template = self::DEFAULT_TEMPLATE;
+        }
+
         $email = $this->prepare($mail, $template, $context);
 
         try {
