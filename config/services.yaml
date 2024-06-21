@@ -1,5 +1,5 @@
 parameters:
-  node.binary: '/usr/bin/node'
+  node.binary: '%env(NODE_BINARY_PATH)%'
   mjml.binary: '%kernel.project_dir%/node_modules/mjml/bin/mjml'
 
 services:

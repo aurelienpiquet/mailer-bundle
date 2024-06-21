@@ -13,6 +13,9 @@
         "gitignore": [
           "/%CONFIG_DIR%/jwt/*.pem"
         ],
+        "env": {
+          "NODE_BINARY_PATH": "/usr/bin/node"
+        },
         "post-install-output": [
           "  1. <bg=magenta;fg=white> Configure mailer_bundle.yaml </>",
           "    * Create a file public/style/mailer.css if you want, otherwise a default font will be used",
