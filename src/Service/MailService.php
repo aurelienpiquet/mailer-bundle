@@ -58,9 +58,7 @@ readonly class MailService
             $context[$key] = $value;
         }
 
-        if (isset($configuration['style'])) {
-           $context['style'] = file_get_contents($configuration['style']);
-        }
+        $context['style'] = isset($configuration['style']) ? file_get_contents($configuration['style']) : file_get_contents(__DIR__ . '/../../Resources/private/template.css');
 
         $email = (new Email())
             ->to($mail)
