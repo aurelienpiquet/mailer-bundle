@@ -8,12 +8,9 @@ namespace Apb\MailerBundle\Service;
 interface MailServiceInterface
 {
     /**
-     * Interface to send mails. Send requires a mail, an array of context and a template
+     * Interface to send mails. Send requires a mail, an array of context and a template@
      *
-     * @param string $mail
-     * @param array $context
-     * @param string|null $template
-     * @return bool
+     * @param mixed[] $context
      */
-    public function send(string $mail, array $context = [], ?string $template = null): bool;
+    public function send(string $mail, array $context = [], ?string $template = null): bool|string;
 }

@@ -10,7 +10,10 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Mime\Email;
 
-readonly class MailService
+/**
+ * {@inheritdoc}
+ */
+readonly class MailService implements MailServiceInterface
 {
     public const DEFAULT_TEMPLATE = '@ApbMailer/message.mjml.twig';
 
@@ -22,6 +25,8 @@ readonly class MailService
     }
 
     /**
+     * {@inheritdoc}
+     *
      * @param mixed[] $context
      */
     public function send(string $mail, array $context = [], ?string $template = null, ?bool $showError = false): bool|string
