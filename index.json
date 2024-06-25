@@ -9,6 +9,6 @@
   "_links": {
     "repository": "github.com/aurelienpiquet/mailer-bundle",
     "origin_template": "{package}:{version}@github.com/aurelienpiquet/mailer-bundle:main",
-    "recipe_template": "https://api.github.com/repos/aurelienpiquet/mailer-bundle/contents/apb-mailer-bundle.{version}.json"
+    "recipe_template": "https://api.github.com/repos/aurelienpiquet/mailer-bundle/contents/apb-mailer-bundle.json"
   }
 }
